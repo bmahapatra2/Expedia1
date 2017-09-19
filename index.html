@@ -1,0 +1,162 @@
+		<!DOCTYPE html>
+		<html>
+		<head>
+			<link rel= "stylesheet" type="text/css" href="style.css">
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<title>Expedia.co.in</title>
+		</head>
+		<body>
+			<div class="parent-container">
+				<div id="logo">
+					<img id="image" src="download.jpg" style="margin-left: 5px;" alt="Expedia">
+				</div>
+				<div id="bell-icon">
+					<img id="bell" src= "bell-musical-tool.png" alt="icon"> 
+					<select name="Login"  style="margin-left: 10px;" onchange="this.options[this.selectedIndex].value && (window.location= this.options[this.selectedIndex].value);">
+						<option value="Account">Account</option>
+						<option value="index3.html">SignUp</option>
+						<option value="2">SignIn</option>
+					</select>
+					<select name="Signup" >
+						<option value="ManageTrip">ManageTrip</option>
+						<option value="index2.html">Domestic</option>
+						<option value="2">International</option>
+					</select>
+					<select name="Support" style="margin-right: 20px">
+						<option value="Support">Support</option>
+						<option value="1">Customer Support</option>
+						<option value="2">Feedback</option>
+					</select>
+					
+				</div>
+			</div>
+			<div class="horizontal-list">
+						<ul>
+							<li><a href="#home">Home</a></li>
+							<li><a href="#flight">Flights</a></li>
+							<li><a href="#discover">Discover</a></li>
+							<li><a href="https://littleapp.in/">Deal</a></li>
+							<li><a href="https://www.travelblog.org/">Travel Blog</a></li>
+							<li><a href="#rewards">Rewards</a></li>
+							<li><a href="#about">About</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+			</div>
+			
+			<div id="content">
+					<div id="image-icon">
+						<button id="btnflight"  type="button"><img id= "hotel" src="images.png" alt="flight"></button>	
+						<button id="btnhotel"  type="button"><img id= "hotel" src="hotel.jpg" alt="hotel"></button>
+						<button id="btnholiday"  type="button"><img id= "hotel" src="holiday.jpg" alt="holiday"></button>
+						<button id="btndiscover"  type="button"><img id= "hotel" src="discover.jpg" alt="discover"></button>
+					</div>
+
+
+				<div id="flightset" class="service-form-container">
+					<form id="service-form">
+									<fieldset>
+
+										<div id="tabs"> 
+											<ul>
+										<li id="oneWay"><a  href="#tabs-1">One-Way</a></li>
+												<li id="return"><a  href="#tabs-2">Two-Way</a></li>
+											</ul>
+											<div id="tabs-1">
+												<div id="options">
+													Flight-From:
+													<input id="flight1" type="text" name="Flight From" style="border:2px solid black; font-size: 18px; margin-right: 25px;" placeholder="From" >
+													Flight-To:
+													<input id="flight2" type="text" name="Flight-To" style="border:2px solid black; margin-right:500px; font-size: 18px;"  placeholder="Destination">
+													<br></br>
+													Departing:
+													<input type="date" name="Traveldate" style="border:2px solid black; margin-right:65px; font-size: 18px;">
+														<div id="returnInfo">Returning:	
+														<input  type="date" name="Traveldate" style="border:2px solid black;  margin-right:70px ;font-size: 18px;" ></div>
+														</div>
+												</div>
+												
+												<div id="claus">
+												Adult<select name="Adults"  style="border:2px solid black; margin-left:25px; font-size: 18px; margin-right: 15px;">
+														<option value="Adults">Adults</option>
+														<option value="1">1</option>
+														<option value="2">2</option>
+														<option value="3+">3+</option>
+												</select>
+												Children<select id="childnum" name="children"  style="border:2px solid black; margin-left:25px; font-size: 18px; ">
+														<option value="children">Children</option>
+														<option value="1">1</option>
+														<option value="2">2</option>
+														<option value="3">3</option>
+														<option value="4">4</option>
+														<option value="5+">5+</option>
+												</select><br>
+												</div>
+												<div id="childInfo"></div>
+											</div>
+											<button class="submit" type="button"><a href="index2.html">Search</a></button>
+
+										</div>
+									</fieldset>
+					</form>
+				
+
+				<div id="hotelset" class="service-form-container">
+					<form id="hotel-service-form">
+					<fieldset>
+						Going-To:<input id="flight1" type="text" name="Flight From" style="border:2px solid black;margin-top:25px;  font-size: 18px; margin-right: 25px;" placeholder="From" >
+						<br></br>	
+						<div id="alignment">
+						Check-In:
+						<input type="date" name="Traveldate" style="border:2px solid black; margin-right:65px; font-size: 18px; ">
+						
+						Check-Out:	
+						<input  type="date" name="Traveldate" style="border:2px solid black;  margin-right:70px ;font-size: 18px;" ></div>
+						<button class="submit" type="button">Search</button>
+						
+						</div>
+						
+						</fieldset>
+					</form>
+				<div id="holidayset" class="service-form-container">
+					<form id="holiday-service-form">
+						<fieldset>
+							Destination:<input id="flight1" type="text" name="Flight From" style="border:2px solid black;margin-top:25px;  font-size: 18px; margin-right: 25px;" placeholder="From" >
+							<br></br>	
+						<div id="alignment">
+						From:
+						<input type="date" name="Traveldate" style="border:2px solid black; margin-right:65px; font-size: 18px; ">
+						
+						To:	
+						<input  type="date" name="Traveldate" style="border:2px solid black;  margin-right:70px ;font-size: 18px;" ></div>
+						<button class="submit" type="button">Search</button>
+						
+						
+
+
+						</fieldset>
+					</form>
+			
+					
+				</div>
+				<div id="discoverset" class="service-form-container">
+					<form id="discover-service-form">
+						<fieldset>
+						What are you looking for?
+						<input type="date" name="Traveldate" style="border:2px solid black; margin-right:65px; font-size: 18px; ">
+						<button class="submit" type="button">Search</button>
+						</fieldset>
+					</form>
+
+				</div>
+				</div>
+			<footer>
+				<p>@ 2017 Expedia.inc./Expedia Asia Holdings MAuritius / AAE Travel Pte Ltd . All rights reserved</p>
+				<p> Contact information: <a href= "bmahapatra@tavisca.com"> bandana mahapatra</a></p>
+			</footer>
+			</div>
+			<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+			<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+			<script src="expedia.js "></script>
+	</body>
+	</html>
